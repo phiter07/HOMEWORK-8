@@ -21,8 +21,7 @@ bool validbst(int arr[],int n) {
     }
 
 
-int main(){
-	
+int main() {
 	 int arr[]={2,4,5};
 	 int n= sizeof(arr) / sizeof(arr[0]);
         cout<<validbst(arr,n);
