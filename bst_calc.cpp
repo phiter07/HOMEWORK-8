@@ -44,7 +44,9 @@ int a=0;
 int main () {
   Node* root = NULL;
 
-  int sum=0;int i=0;
+  int sum=0;
+  int i=0;
+  
   string line;int enterNumber;
   getline(cin, line);
   istringstream iss(line);

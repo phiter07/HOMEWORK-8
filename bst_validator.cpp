@@ -1,29 +1,27 @@
 #include<iostream>
 #include <sstream>
 using namespace std;
-bool validbst(int arr[],int n){
-    
-        for(int i=0;i<n;i++)
-        {
-            
-            int l= 2*i+1;// left chile
-            int r = 2*i+2;//right child
-        if( l<n)
-            {if(arr[l]>arr[i])//if left child greater then root then return false
-            return false;
-        }
-                
-         if( r<n ){
-             if(arr[r]<arr[i])//if right child less then root return flase
-                return false;
-        }}
-        return true;
+
+bool validbst(int arr[],int n) {
+  for(int i=0;i<n;i++) {
+    int l= 2*i+1;// left chile
+    int r = 2*i+2;//right child
+    if( l<n) {
+      if(arr[l]>arr[i])//if left child greater then root then return false
+      return false;
+    }       
+    if( r<n ) {
+      if(arr[r]<arr[i])//if right child less then root return flase
+      return false;
     }
-int main(){
-	
-	 int arr[1000];
+  }
+    return true;
+}
+int main() {
+	int arr[1000];
 	int i=0;
-   string line;int enterNumber;
+  string line;
+  int enterNumber;
 getline(cin, line);
 istringstream iss(line);
 while (iss >> enterNumber)
@@ -33,10 +31,9 @@ while (iss >> enterNumber)
      i++;
 }
  	
-       int chk=validbst(arr,i);
-     
-        if(chk==1)
-        std::cout<<"True";
-        else 
-        std::cout<<"False";
+    int chk=validbst(arr,i);
+    if(chk==1)
+    cout<<"True";
+    else 
+    cout<<"False";
 }
