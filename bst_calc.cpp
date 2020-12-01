@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <sstream>
 using namespace std;
@@ -41,7 +42,7 @@ int a=0;
 
 
 
-int main () {
+ main () {
   Node* root = NULL;
 
   int sum=0;
@@ -60,3 +61,4 @@ int main () {
 
 std::cout << "min="<<mini(root)<<endl<<"max="<<maxi(root)<<endl<<"AVG="<<avg;
 }
+/*
