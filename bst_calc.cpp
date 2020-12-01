@@ -24,14 +24,14 @@ Node* addNode(Node* root, int data) {
 
   return root;
 }
-int mini(Node* root){
+int mini(Node* root) {
 int a=0;
 	if(root->left==NULL)
 	return root->data;
 	else a=mini(root->left);
   return a;
 }
-int maxi(Node* root){
+int maxi(Node* root) {
 int a=0;
 	if(root->right==NULL)
 	return root->data;
@@ -45,19 +45,16 @@ int main () {
   Node* root = NULL;
 
   int sum=0;int i=0;
- string line;int enterNumber;
-getline(cin, line);
-istringstream iss(line);
-while (iss >> enterNumber)
-{
-   
+  string line;int enterNumber;
+  getline(cin, line);
+  istringstream iss(line);
+
+  while (iss >> enterNumber) {
      root = addNode(root, (int)enterNumber);
      	sum=sum+ (int)enterNumber;i++;
-}
- 
- 
- 
-  
+  }
+
   float avg=(float)sum/i;
+
 std::cout << "min="<<mini(root)<<endl<<"max="<<maxi(root)<<endl<<"AVG="<<avg;
 }
