@@ -17,7 +17,7 @@ bool validbst(int arr[],int n) {
   }
     return true;
 }
-/*
+
 int main() {
 	int arr[1000];
 	int i=0;
@@ -34,8 +34,7 @@ while (iss >> enterNumber)
  	
     int chk=validbst(arr,i);
     if(chk==1)
-    cout<<"True";
+      std::cout<<"True";
     else 
-    cout<<"False";
+      std::cout<<"False";
 }
-*/
