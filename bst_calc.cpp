@@ -1,4 +1,4 @@
-/*
+
 #include <iostream>
 #include <sstream>
 using namespace std;
@@ -61,4 +61,3 @@ int a=0;
 
 std::cout << "min="<<mini(root)<<endl<<"max="<<maxi(root)<<endl<<"AVG="<<avg;
 }
-/*

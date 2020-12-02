@@ -1,5 +1,7 @@
 #include<iostream>
 #include <sstream>
+#include <array>
+#include <string>
 using namespace std;
 
 bool validbst(int arr[],int n) {
@@ -40,3 +42,34 @@ while (iss >> enterNumber)
     else 
       std::cout<<"False";
 }
+
+
+
+
+
+
+/*
+bool right_child(int tree[], int root, int rightMin, bool validBST) {
+  if(tree[2*root] == 0 && tree[2*root+1] == 0) 
+    return true;
+  
+  if (tree[(2*root)] < rightMin)
+    return false;
+
+  if (tree[2*root] != 0) {
+    if (tree[2*root] < tree[root]) {
+      validBST = right_child(tree, (2*root), rightMin, validBST);
+    }
+    else
+    validBST = false;
+  }
+
+  if(!validBST)
+    return validBST;
+
+  if(tree[(2*root)+1] !=0) 
+
+
+}
+*/
+
